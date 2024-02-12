@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Encriptador/Desencriptador</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-      <img class = "logo_a" src= "" alt= "logo_a" > 
+      <img class="logo_a" src="images/logo.png" alt="logo_a" />
     </header>
-    
+
     <main>
-      <div class = "caja_texto">
-      <textarea placeholder="Ingrese el texto aqui"
-        class="espacio_texto"></textarea>
+      <div class="caja_texto">
+        <textarea
+          placeholder="Ingrese el texto aqui"
+          class="espacio_texto"
+        ></textarea>
       </div>
 
-      
-      <div class = "boton_alerta" >
-        <img src= "" alt= "boton_alerta" >
-        <p> Solo letras minúsculas y sin acentos</p>
-
+      <div class="boton_alerta">
+        <img src="images/alerta.png" alt="boton_alerta" />
+        <p>Solo letras minúsculas y sin acentos</p>
       </div>
 
-      <div class= "botones">
-        <input type = "button" class = "boton_encriptar"
-               value = "Encriptar" >
-        <input type = "button" class = "boton_dencriptar"
-               value= "Desencriptar" >
-
+      <div class="botones">
+        <input type="button" class="boton_encriptar" value="Encriptar" />
+        <input type="button" class="boton_dencriptar" value="Desencriptar" />
       </div>
 
-      <div class= "logo_b">
-        <img  src= "" alt= "logo_b" > 
+      <div class="logo_b">
+        <img src="images/munieco.png" alt="logo_b" />
       </div>
 
-      <div class= "mensaje">
-        <h3>Ningún texto fue <br>encontrado </h3>
-        <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
-
+      <div class="mensaje">
+        <h3>Ningún texto fue <br />encontrado</h3>
+        <p>
+          Ingresa el texto que desees encriptar o <br />
+          desencriptar.
+        </p>
       </div>
 
-      <div class= "copiar">
-        <input type = "button" class = "boton_copiar"
-               value = "Copiar" >
+      <div class="copiar">
+        <input type="button" class="boton_copiar" value="Copiar" />
       </div>
 
       <div class="contenedor_resultado">
-                  <p class="texto-resultado"></p>
+        <p class="texto-resultado"></p>
       </div>
     </main>
 
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
