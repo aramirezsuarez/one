@@ -9,17 +9,18 @@ botonEncriptar.onclick = encriptar
 botonDesencriptar.onclick = desencriptar
 botonCopiar.onclick = copiarTexto
 
-function encriptar() {
-  ocultarAdelante()
-  let cajatexto = recuperarTexto()
-  resultado.textContent = encriptarTexto(cajatexto)
+function encriptar(){
+    ocultarAdelante();
+    var cajatexto = recuperarTexto()
+    resultado.textContent = encriptarTexto(cajatexto);
 }
 
-function desencriptar() {
-  ocultarAdelante()
-  let cajatexto = recuperarTexto()
-  resultado.textContent = desencriptarTexto(cajatexto)
+function desencriptar(){
+    ocultarAdelante();
+    var cajatexto = recuperarTexto()
+    resultado.textContent = desencriptarTexto(cajatexto);
 }
+
 
 function recuperarTexto() {
   let cajatexto = document.querySelector('.espacio_texto')
@@ -31,60 +32,79 @@ function ocultarAdelante() {
   contenedor.classList.add('ocultar')
 }
 
-function encriptarTexto(mensaje) {
-  let texto = mensaje
-  let textoFinal = ''
+function encriptarTexto(mensaje){
+    var texto = mensaje;
+    var textoFinal = "";
 
-  for (let i = 0; i < texto.length; i++) {
-    if (texto[i] == 'a') {
-      textoFinal = textoFinal + 'ai'
-    } else if (texto[i] == 'e') {
-      textoFinal = textoFinal + 'enter'
-    } else if (texto[i] == 'i') {
-      textoFinal = textoFinal + 'imes'
-    } else if (texto[i] == 'o') {
-      textoFinal = textoFinal + 'ober'
-    } else if (texto[i] == 'u') {
-      textoFinal = textoFinal + 'ufat'
-    } else {
-      textoFinal = textoFinal + texto[i]
+    for(var i = 0; i < texto.length; i++){
+        if(texto[i] == "a"){
+            textoFinal = textoFinal + "ai"
+        }
+        else if(texto[i] == "e"){
+            textoFinal = textoFinal + "enter"
+        }
+        else if(texto[i] == "i"){
+            textoFinal = textoFinal + "imes"
+        }
+        else if(texto[i] == "o"){
+            textoFinal = textoFinal + "ober"
+        }
+        else if(texto[i] == "u"){
+            textoFinal = textoFinal + "ufat"
+        }
+        else{
+            textoFinal = textoFinal + texto[i]
+        }
     }
-  }
-  return textoFinal
+    return textoFinal;
+
 }
+
 
 function desencriptarTexto(mensaje) {
-  let texto = mensaje
-  let textoFinal = ''
+  var texto = mensaje;
+  var textoFinal = "";
+  var i = 0;
 
-  for (let i = 0; i < texto.length; i++) {
-    if (texto[i] == 'a') {
-      textoFinal = textoFinal + 'a'
-      i = i + 1
-    } else if (texto[i] == 'e') {
-      textoFinal = textoFinal + 'e'
-      i = i + 4
-    } else if (texto[i] == 'i') {
-      textoFinal = textoFinal + 'i'
-      i = i + 3
-    } else if (texto[i] == 'o') {
-      textoFinal = textoFinal + 'o'
-      i = i + 3
-    } else if (texto[i] == 'u') {
-      textoFinal = textoFinal + 'u'
-      i = i + 3
+  while (i < texto.length) {
+    if (texto[i] == " ") {
+      textoFinal += " ";
+      i++;
+    } else if (texto[i] == "a" && texto[i + 1] == "i") {
+      textoFinal += "a";
+      i += 2;
+    } else if (texto.substring(i, i + 5) == "enter") {
+      textoFinal += "e";
+      i += 5;
+    } else if (texto.substring(i, i + 4) == "imes") {
+      textoFinal += "i";
+      i += 4;
+    } else if (texto.substring(i, i + 4) == "ober") {
+      textoFinal += "o";
+      i += 4;
+    } else if (texto.substring(i, i + 4) == "ufat") {
+      textoFinal += "u";
+      i += 4;
     } else {
-      textoFinal = textoFinal + texto[i]
+      textoFinal += texto[i];
+      i++;
     }
   }
 
-  return textoFinal
+  return textoFinal;
 }
+
+
 
 function copiarTexto() {
   const respuesta = resultado.textContent
   navigator.clipboard
     .writeText(respuesta)
-    .then(() => console.log(`Se ha copiado el texto ${respuesta}`))
-    .catch((err) => console.log(err))
+    .then(() => console.log(`Se ha copiado el texto "${respuesta}"`))
+    .catch((err) => console.log("Error al copiar el texto:", err))
+}
+
+function validarTexto(texto) {
+  // Validar que el texto solo contiene letras minúsculas y sin acentos
+  return /^[a-z]+$/.test(texto)
 }
