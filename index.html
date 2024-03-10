@@ -5,53 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
     <title>Encriptador/Desencriptador</title>
   </head>
   <body>
     <header>
       <img class="logo_a" src="images/logo.png" alt="logo_a" />
     </header>
-
     <main>
-      <div class="caja_texto">
-        <textarea
-          placeholder="Ingrese el texto aquí"
-          class="espacio_texto"
-        ></textarea>
-      </div>
-
-      <div class="boton_alerta">
-        <img src="images/alerta.png" alt="boton_alerta" />
-        <p>Solo letras minúsculas y sin acentos</p>
-      </div>
-
-      <div class="botones">
-        <input type="button" class="boton_encriptar" value="Encriptar" />
-        <input type="button" class="boton_dencriptar" value="Desencriptar" />
-      </div>
-
-      <div class="logo_b">
-        <img src="images/munieco.png" alt="logo_b" />
-      </div>
-
-      <div class="mensaje">
-        <h3>Ningún texto fue <br />encontrado</h3>
-        <p>
-          Ingresa el texto que desees encriptar o <br />
-          desencriptar.
-        </p>
-      </div>
-
-      <div class="copiar">
-        <input type="button" class="boton_copiar" value="Copiar" />
-      </div>
-
-      <div class="contenedor_resultado">
-        <p class="texto-resultado"></p>
-      </div>
+      <section class="seccion1">
+        <div class="caja_texto">
+          <textarea
+            placeholder="Ingrese el texto aquí"
+            class="espacio_texto"
+          ></textarea>
+        </div>
+        <div class="boton_alerta">
+          <img src="images/alerta.png" alt="boton_alerta" />
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+          <input type="button" class="boton_encriptar" value="Encriptar" />
+          <input type="button" class="boton_dencriptar" value="Desencriptar" />
+        </div>
+      </section>
+      <section class="seccion2">
+        <div class="logo_b">
+          <img src="images/munieco.png" alt="logo_b" />
+        </div>
+        <div class="mensaje">
+          <h3>Ningún texto fue <br />encontrado</h3>
+          <p>
+            Ingresa el texto que desees encriptar o <br />
+            desencriptar.
+          </p>
+        </div>
+        <div class="copiar">
+          <input type="button" class="boton_copiar" value="Copiar" />
+        </div>
+        <div class="contenedor_resultado">
+          <p class="texto-resultado"></p>
+        </div>
+      </section>
     </main>
-
     <script src="script.js"></script>
   </body>
 </html>
