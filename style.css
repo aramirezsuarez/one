@@ -28,7 +28,7 @@ main {
     justify-content: space-between;
 }
 
-.contenedorcajatexto {
+.caja_texto {
     position: absolute;
     left: 200px;
     top: 100px;
@@ -53,7 +53,7 @@ main {
     color: #0A3871;
 }
 
-.alerta {
+.boton_alerta {
     position: absolute;
     top: 750px;
     left: 370px;
@@ -61,7 +61,7 @@ main {
     color: #495057;
 }
 
-.contenedor-botones {
+.botones {
     position: absolute;
     top: 800px;
     height: 80px;
@@ -109,7 +109,7 @@ main {
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
 }
 
-.contenedormunieco {
+.logo_b {
     position: absolute;
     left: 30px;
     top: 180px;
@@ -117,14 +117,14 @@ main {
     padding-top: 50px;
 }
 
-.contenedor-parrafo {
+.mensaje {
     position: absolute;
     box-sizing: border-box;
     top: 570px;
     left: 40px;
 }
 
-.contenedor-parrafo h3 {
+.mensaje h3 {
     font-size: 24px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
@@ -132,7 +132,7 @@ main {
     color: #343A40;
 }
 
-.contenedor-parrafo p {
+.mensaje p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
