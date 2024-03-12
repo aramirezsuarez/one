@@ -183,3 +183,54 @@ main {
 .ocultar {
     display: none;
 }
+
+
+@media screen and (max-width:480px){
+    .botones{
+        height: 67px;
+        top: 700px;
+        left: 20px;    
+    }
+    .caja_texto{
+        height: 500px;
+        width: 370px;
+        top: 150px;
+        left: 20px;   
+    }
+    .boton_alerta{
+        height: 20px;
+        top: 680px;
+        left: 30px;   
+    }
+    .boton_alerta img {
+        width: 20px;
+    }
+    .mensaje{
+        height: 200px;
+        width: 370px;
+        top: 890px;
+        left:15px; 
+    }
+    .texto-resultado{
+        height: 380px;
+        width: 370px;
+        border-radius: 24px;
+        top: 890px;
+        left:15px; 
+        padding-left: 5px;
+    }
+    .copiar{
+        top: 500px;
+        left: 10px; 
+        width: 300px;
+        border-style:solid;
+    }
+    .logo_b{
+        display: none;
+    }
+    .mensaje h3{
+        top: 50px;
+        left: 5px; 
+    }
+  
+}
