@@ -105,6 +105,5 @@ function copiarTexto() {
 }
 
 function validarTexto(texto) {
-  // Validar que el texto solo contiene letras minúsculas y sin acentos
   return /^[a-z]+$/.test(texto)
 }
