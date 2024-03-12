@@ -37,7 +37,7 @@ main {
     height: 600px;
 }
 
-.cajatexto {
+.espacio_texto {
     width: 80%;
     height: 100%;
     border: none;
@@ -156,7 +156,7 @@ main {
     font-size: 25px;
 }
 
-.contenedor-copiar {
+.copiar{
     display: flex;
     position: absolute;
     bottom: 400px;
@@ -165,7 +165,7 @@ main {
     padding-left: 40px;
 }
 
-.btn-copiar {
+.boton_copiar{
     width: 328px;
     height: 67px;
     border-radius: 24px;
@@ -180,7 +180,6 @@ main {
     top: 50px;
     right: 4px;
 }
-
 .ocultar {
     display: none;
 }
