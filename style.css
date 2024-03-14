@@ -39,7 +39,7 @@ main {
 }
 
 .espacio_texto {
-    width: 80%;
+    width: 75%;
     height: 100%;
     border: none;
     background-color: #f4f4fc;
@@ -189,36 +189,77 @@ main {
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 480px) {
     .seccion2 {
-        width: calc(100% - 40px);
-        margin: auto;
-        height: auto; /* Altura automática para adaptarse al contenido */
-        padding: 20px; /* Agrega espacio alrededor del contenido */
+        width: 328px;
+        margin: 258px;
+        height: 250px; /* Altura automática para adaptarse al contenido */
+        padding: 193px; /* Agrega espacio alrededor del contenido */
         border-radius: 20px; /* Redondea los bordes */
         box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Agrega sombra */
-        margin-top: 20px; /* Agrega margen superior */
+        margin-top: 1000px; /* Agrega margen superior */
+        padding-left: 10%;
     }
-
-    .mensaje {
+     .espacio_texto {
+      width: 40%;
+      height: 80%;
+      border: none;
+      background-color: #f4f4fc;
+      cursor: pointer;
+      color: #0A3871;
+      font-size: 32px;
+      font-weight: 400;
+      font-family: 'Inter', sans-serif;
+  }
+  
+    .boton_alerta {
+      position: absolute;
+      top: 600px;
+      left: 100px;
+      display: flex;
+      color: #495057;
+}
+   
+    .caja_texto {
+      position: absolute;
+      left: 00px;
+      top: 100px;
+      padding-left: 100px;
+      width: 1080px;
+      height: 600px;
+  }
+     .mensaje {
         position: static; /* Cambia a posición estática para que flote en el contenedor */
-        margin-bottom: 20px; /* Agrega margen inferior */
+        margin-bottom: 50px; /* Agrega margen inferior */
     }
 
     .contenedor-resultado {
-        bottom: unset; /* Elimina la posición absoluta */
         width: calc(100% - 40px);
         margin-left: 20px;
         margin-bottom: 20px; /* Agrega margen inferior */
     }
 
     .copiar {
-        position: static; /* Cambia a posición estática */
-        width: calc(100% - 40px);
-        padding-left: 20px;
+  /* Cambia a posición estática */
+        width: 200px;
+        height: 250px
+        padding-left: 10px;
     }
+    .boton_dencriptar {
+      width: 328px;
+      height: 69px;
+      border-radius: 24px;
+      background-color: #f4f4fc;
+      color: #0A3871;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Inter', sans-serif;
+      border: 1px solid #0A3871;
+      cursor: pointer;
+}
+
 
     .boton_copiar {
         width: calc(100% - 40px);
-        height: 67px;
+        height: 69px;
         border-radius: 24px;
         background-color: #ffffff;
         color: #0A3871;
@@ -228,7 +269,7 @@ main {
         border: 1px solid #0A3871;
         cursor: pointer;
         position: relative;
-        top: 50px;
+        top: -410px;
         right: 4px;
     }
 
