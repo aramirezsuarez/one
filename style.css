@@ -1,4 +1,4 @@
-/* Estilos para PC */
+
 * {
     margin: 0;
     padding: 0;
@@ -188,59 +188,48 @@ main {
 
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 480px) {
-    .caja_texto {
-        left: 20px;
+    .seccion2 {
         width: calc(100% - 40px);
-        height: 300px;
-        top: 150px;
-    }
-
-    .boton_alerta {
-        position: absolute;
-        top: 470px;
-        left: 20px;
-        width: calc(100% - 40px);
-        text-align: center;
-    }
-
-    .botones {
-        position: absolute;
-        top: 540px;
-        height: auto;
-        padding: 0 20px;
-        width: calc(100% - 40px);
-        text-align: center;
-    }
-
-    .boton_encriptar,
-    .boton_dencriptar {
-        width: calc(50% - 10px);
-        margin: 5px;
+        margin: auto;
+        height: auto; /* Altura automática para adaptarse al contenido */
+        padding: 20px; /* Agrega espacio alrededor del contenido */
+        border-radius: 20px; /* Redondea los bordes */
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+        margin-top: 20px; /* Agrega margen superior */
     }
 
     .mensaje {
-        position: absolute;
-        top: 630px;
-        left: 20px;
-        width: calc(100% - 40px);
+        position: static; /* Cambia a posición estática para que flote en el contenedor */
+        margin-bottom: 20px; /* Agrega margen inferior */
     }
 
     .contenedor-resultado {
-        position: absolute;
-        bottom: 30px;
+        bottom: unset; /* Elimina la posición absoluta */
         width: calc(100% - 40px);
         margin-left: 20px;
+        margin-bottom: 20px; /* Agrega margen inferior */
     }
 
     .copiar {
-        position: absolute;
-        top: 390px;
+        position: static; /* Cambia a posición estática */
         width: calc(100% - 40px);
         padding-left: 20px;
     }
 
     .boton_copiar {
         width: calc(100% - 40px);
+        height: 67px;
+        border-radius: 24px;
+        background-color: #ffffff;
+        color: #0A3871;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        border: 1px solid #0A3871;
+        cursor: pointer;
+        position: relative;
+        top: 50px;
+        right: 4px;
     }
 
     .logo_b {
