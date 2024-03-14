@@ -191,22 +191,21 @@ main {
     .seccion2 {
         width: 328px;
         margin: 258px;
-        height: 250px; /* Altura automática para adaptarse al contenido */
-        padding: 193px; /* Agrega espacio alrededor del contenido */
-        border-radius: 20px; /* Redondea los bordes */
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Agrega sombra */
-        margin-top: 1000px; /* Agrega margen superior */
+        height: 580px; 
+        padding: 288px; 
+        border-radius: 20px; 
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+        margin-top: 1000px; 
         padding-left: 10%;
     }
      .espacio_texto {
-      width: 40%;
       height: 80%;
       border: none;
       background-color: #f4f4fc;
       cursor: pointer;
       color: #0A3871;
-      font-size: 32px;
-      font-weight: 400;
+      font-size: 28px;
+      font-weight: 350;
       font-family: 'Inter', sans-serif;
   }
   
@@ -223,26 +222,46 @@ main {
       left: 00px;
       top: 100px;
       padding-left: 100px;
-      width: 1080px;
+      width: 480px;
       height: 600px;
   }
      .mensaje {
-        position: static; /* Cambia a posición estática para que flote en el contenedor */
-        margin-bottom: 50px; /* Agrega margen inferior */
-    }
+    box-sizing: border-box;
+    top: 50px;
+    left: 30px;
+}
+
+    .mensaje h3 {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        color: #343A40;
+ }
+
+    .mensaje p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #495057;
+        padding-top: 20px;
+}
 
     .contenedor-resultado {
         width: calc(100% - 40px);
         margin-left: 20px;
-        margin-bottom: 20px; /* Agrega margen inferior */
+        margin-bottom: 20px;
+     
     }
 
     .copiar {
-  /* Cambia a posición estática */
+
         width: 200px;
-        height: 250px
+        height: 0px;
         padding-left: 10px;
     }
+  
     .boton_dencriptar {
       width: 328px;
       height: 69px;
